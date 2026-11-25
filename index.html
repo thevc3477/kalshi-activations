@@ -141,6 +141,13 @@ p.big{font-size:20px;line-height:1.5;color:#dcdcd3;max-width:760px}
 .con .x b{font-family:'DM';font-weight:500;font-size:11px;letter-spacing:.08em;text-transform:uppercase;display:block;color:var(--lime);margin-bottom:3px}
 .con .t{margin-top:14px;font-family:'DM';font-size:11px;letter-spacing:.08em;text-transform:uppercase;text-decoration:underline;text-underline-offset:4px}
 .callnote{display:block;max-width:820px;margin:6px 0 30px;padding:12px 16px;border-left:4px solid var(--lime);background:var(--panel);border-radius:6px;font-size:14.5px;color:#c9c9c0}
+.cgrid.five{grid-template-columns:repeat(2,1fr)}
+.cgrid.five .con{cursor:default}
+.cgrid.five .con:last-child{grid-column:1/-1}
+.con p a,.con .builds a{color:var(--lime);text-decoration:underline;text-underline-offset:3px}
+.con p a:hover,.con .builds a:hover{color:#fff}
+.con .builds{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:13.5px;color:#c9c9c0;position:relative;line-height:1.45}
+.con .builds b{font-family:'DM';font-weight:500;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--lime);display:block;margin-bottom:4px}
 /* MEASURE */
 .meas{display:grid;grid-template-columns:1fr 1.25fr;gap:44px;align-items:start}
 .funnel{display:grid;gap:10px}
@@ -187,7 +194,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .js .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
 .js .reveal.vis{opacity:1;transform:none}
 @media (max-width:980px){.ticker{display:none}}
-@media (max-width:900px){.cgrid,.modal,.meas,.bgrid,.ggoals{grid-template-columns:1fr}.agrid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.step:nth-child(2){border-right:0}.step:nth-child(-n+2){border-bottom:1px solid var(--line)}.stack{height:340px}.fstep{margin-right:0!important}}
+@media (max-width:900px){.cgrid,.cgrid.five,.modal,.meas,.bgrid,.ggoals{grid-template-columns:1fr}.cgrid.five .con:last-child{grid-column:auto}.agrid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.step:nth-child(2){border-right:0}.step:nth-child(-n+2){border-bottom:1px solid var(--line)}.stack{height:340px}.fstep{margin-right:0!important}}
 @media (max-width:600px){.stack{height:300px}.stack img{height:250px!important}.stack img:nth-child(2){top:40px}.agrid,.pair,.also{grid-template-columns:1fr}.act.wide{grid-column:auto}.act.wide .p{font-size:30px}section{padding:64px 0}.wrap{padding:0 20px}.callout{padding:28px 24px}nav .logo span{display:none}.act{height:340px}.act .w{max-height:200px;opacity:1;margin-top:8px}.act .more{opacity:1}.act:after{background:linear-gradient(180deg,rgba(0,0,0,.1) 10%,rgba(0,0,0,.93) 58%)}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style></head>
@@ -217,7 +224,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     <div class="name">Virginia Shipp</div>
     <h1>Partnership Activations at Kalshi: <em>what success looks like.</em></h1>
     <p class="hook">A partnership is a contract until fans can see it, feel it and use it. I turn rights into moments, and moments into new users.</p>
-    <p class="sub">A short, personal take on the role: how I'd spend the first 90 days, three activations I'd pitch, and how I'd prove they worked.</p>
+    <p class="sub">A short, personal take on the role: how I'd spend the first 90 days, partnership activation ideas I'd pitch, and how I'd prove they worked.</p>
   </div>
 </header>
 
@@ -234,10 +241,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 </div></section>
 
 <section id="ideas"><div class="wrap">
-  <div class="eyebrow">Three activations I'd pitch</div>
-  <h2>Big moments, built for Kalshi.</h2>
-  <div class="callnote">These are my proposals, not existing Kalshi plans. They build on partnerships Kalshi has announced publicly (the US Open, the NBA, the Pro Padel League) and would run with Legal and Compliance from day one.</div>
-  <div class="cgrid" id="cgrid"></div>
+  <div class="eyebrow">Partnership activation ideas</div>
+  <h2>Built on deals Kalshi already has.</h2>
+  <div class="callnote">These are my proposals, not existing Kalshi plans. Each one starts from a partnership Kalshi has announced publicly, and would run with Legal and Compliance from day one.</div>
+  <div class="cgrid five" id="cgrid"></div>
 </div></section>
 
 <section id="plan"><div class="wrap">
@@ -250,10 +257,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 <section id="proof"><div class="wrap">
   <div class="eyebrow">Past work</div>
   <h2>Brand partners, real rooms.</h2>
-  <div class="partners lead"><span class="mono">Partners I've brought in:</span><span class="g">Porsche</span><span class="g">Red Bull</span><span class="g">Live Nation</span><span class="g">TEDx</span><span class="g">Chicago Bulls</span><span class="g">Patrón</span><span class="g">Marc Nolan</span><span class="g">Discogs</span></div>
+  <div class="partners lead"><span class="mono">Partners I've brought in:</span><span class="g">Porsche</span><span class="g">Red Bull</span><span class="g">Live Nation</span><span class="g">TEDx</span><span class="g">Patrón</span><span class="g">Marc Nolan</span><span class="g">Discogs</span></div>
   <div class="skills"><span class="mono">What I own end to end:</span><span>Sponsor deals</span><span>Partner relationships</span><span>Run of show</span><span>Venue logistics and timelines</span><span>Results reporting</span></div>
   <div class="also">
-    <div><b>Live Nation at Lollapalooza</b><span>Planned, budgeted and ran a lounge activation at Lollapalooza, summer 2026.</span></div>
+    <div><b>Live Nation at Lollapalooza</b><span>Months of planning a Lollapalooza activation with Live Nation and Patrón. It was pulled at the last minute and never ran.</span></div>
     <div><b>Red Bull Setlist with Lil Yachty</b><span>Activated with Red Bull around Setlist, on top of their 2026 sponsorship of our monthly events.</span></div>
   </div>
   <div class="filters" role="group" aria-label="Filter activations">
@@ -278,7 +285,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   <h2>I build activations from scratch, and I speak markets.</h2>
   <p class="big">The role sits exactly where my two careers meet: putting brands in front of real fans, and working with the data that tells you whether it paid off.</p>
   <div class="bgrid" style="margin-top:30px">
-    <div class="bcard reveal"><span class="mono">Founder · Chicago · 2025</span><h3>Vinyl Collectiv</h3><p>The community and events company I founded and grew solo to ~10,000 members, with monthly events and brand partners like Red Bull, Live Nation, the Chicago Bulls and Patrón.</p></div>
+    <div class="bcard reveal"><span class="mono">Founder · Chicago · 2025</span><h3>Vinyl Collectiv</h3><p>The community and events company I founded and grew solo to ~10,000 members, with monthly events and brand partners like Red Bull, Live Nation and Patrón.</p></div>
     <div class="bcard reveal"><span class="mono">Los Angeles</span><h3>Aqua Talent</h3><p>Executive assistant to the CEO and a senior agent at a Los Angeles talent agency: client meetings, deal paperwork and the pace of talent work.</p></div>
     <div class="bcard reveal"><span class="mono">Now</span><h3>Financial Systems Engineer</h3><p>At a leading quantitative trading firm, working with trading, risk and PnL data behind live markets in a regulated, fast-moving environment.</p></div>
   </div>
@@ -330,12 +337,11 @@ const ACTS=[
   r:'Casting talent through an open call is creator partnerships at small scale.'}
 ];
 const CONS=[
- {n:'01 · Tennis · US Open 2027',h:'The Changeover Lounge',s:'A lounge for Kalshi users at the US Open: live market screens, DJ sets between sessions, and the room reacting together as prices move point by point.',
-  w:'Kalshi announced a multi-year deal as the US Open\'s prediction market partner, including on-site activations and experiences for users.',m:'A hosted lounge with guest hosts, live market screens and entry through the Kalshi app, so every guest is a sign-up moment.',p:'The TEDxChicago lounge and the Live Nation lounge at Lollapalooza.'},
- {n:'02 · Basketball · NBA nights',h:'Call It Watch Nights',s:'Monthly NYC watch parties around marquee NBA games, co-hosted by creators, where the crowd calls the swings and the room tracks the market live.',
-  w:'Kalshi became a Preferred Prediction Market Exchange of the NBA in October 2026.',m:'A recurring community night with one creator host per night and a code per host, so we know who drives sign-ups.',p:'My monthly community events, plus partnerships with the Chicago Bulls and Red Bull.'},
- {n:'03 · Padel · Pro Padel League',h:'Padel Club Nights',s:'A recurring NYC series around league events: a small creator-hosted clinic, then a social watch night with live markets on screen.',
-  w:'In July 2026 Kalshi signed a multiyear Pro Padel League sponsorship covering hospitality, co-branded giveaways and padel clinics, and its partnerships lead has pointed to a strong overlap between padel players and Kalshi users.',m:'Turn the clinic and hospitality rights into invite-led nights, with a code per creator host to track sign-ups and first trades.',p:'Porsche Demo Demo Day and the Red Bull Sample Session.'}
+ {n:'01 · Chicago · Blackhawks',h:'Fans vs. the Market',s:'A night at the United Center with live Kalshi odds next to a live fan poll. Every time they split, the crowd picks a side. I already built the comparison layer in <a href="https://thevc3477.github.io/fan-pulse/" target="_blank" rel="noopener">Fan Pulse</a>.',b:'The <a href="https://news.kalshi.com/p/kalshi-chicago-blackhawks-partnership" target="_blank" rel="noopener">Chicago Blackhawks partnership</a>, announced December 23, 2025, including signage at the United Center.'},
+ {n:'02 · Music · Culture',h:'A room for music',s:'The House of GOAL format, applied to music: live market screens on the next awards show or festival headliner, and a room full of fans arguing with the odds.',b:'Kalshi\'s <a href="https://news.kalshi.com/p/kalshi-named-official-prediction-market-sponsor-of-house-of-goal-bringing-live-markets-to-soccer-s-b" target="_blank" rel="noopener">House of GOAL activation</a> in Brooklyn, July 2026, which put a hero bar and live market screens in the room.'},
+ {n:'03 · New York · Madison Square Garden',h:'Concert nights at the Kalshi Concourse',s:'On concert nights at the Garden, put culture markets on the screens and let the crowd vote against them between sets.',b:'The <a href="https://news.kalshi.com/p/kalshi-madison-square-garden-partnership" target="_blank" rel="noopener">Madison Square Garden partnership</a>, announced May 2026, which named the sixth-floor Kalshi Concourse and includes visibility at concerts and comedy.'},
+ {n:'04 · Creators · Weekly',h:'Crowd vs. Odds',s:'A weekly creator segment that picks the game where fans and the market disagree most, argues both sides, then checks back after the final whistle. The split can be pulled from <a href="https://thevc3477.github.io/fan-pulse/" target="_blank" rel="noopener">Fan Pulse</a>.',b:'Kalshi\'s creator and talent work, including its <a href="https://www.sportspro.com/news/sponsorship-marketing/bryson-dechambeau-kalshi-endorsement-deal-prediction-markets-january-2026/" target="_blank" rel="noopener">first athlete partnership</a>, and <a href="https://thevc3477.github.io/fan-pulse/" target="_blank" rel="noopener">Fan Pulse</a>.'},
+ {n:'05 · Chicago · Album release',h:'Record store crawl',s:'A Chicago record store crawl for an album release. Fans predict first-week numbers, and every stop shows the live market. I\'d run it through the record store network I already work with.',b:'Culture markets already live through the <a href="https://www.covers.com/industry/prizepicks-partners-with-kalshi-sports-entertainment-cultural-markets-nov-14-2025" target="_blank" rel="noopener">PrizePicks partnership</a>, and the Chicago record store network I built with Vinyl Collectiv.'}
 ];
 const FUN=[
  {h:'Reach',m:'Who saw it: attendance, partner channel impressions and creator post views, all logged per activation.'},
@@ -359,9 +365,9 @@ function filt(f){document.querySelectorAll('.filters button').forEach(x=>x.class
 document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>filt(b.dataset.f));
 // ideas
 const cg=$('#cgrid');
-CONS.forEach(c=>{const b=document.createElement('button');b.className='con reveal';b.setAttribute('aria-expanded','false');
- b.innerHTML=`<div class="num">${c.n}</div><h3>${c.h}</h3><p>${c.s}</p><div class="x"><div><b>Why now</b>${c.w}</div><div><b>The mechanic</b>${c.m}</div><div><b>Proof I can run it</b>${c.p}</div></div><div class="t">Show the breakdown</div>`;
- b.onclick=()=>{const o=b.classList.toggle('open');b.setAttribute('aria-expanded',o);b.querySelector('.t').textContent=o?'Hide the breakdown':'Show the breakdown';};cg.appendChild(b);});
+CONS.forEach(c=>{const el=document.createElement('article');el.className='con reveal';
+ el.innerHTML=`<div class="num">${c.n}</div><h3>${c.h}</h3><p>${c.s}</p><div class="builds"><b>Builds on</b>${c.b}</div>`;
+ cg.appendChild(el);});
 // funnel
 const fn=$('#funnel');
 FUN.forEach((f,i)=>{const b=document.createElement('button');b.className='fstep'+(i===2?' on':'');b.innerHTML=`<span class="k">0${i+1}</span><div><h4>${f.h}</h4><div class="m">${f.m}</div></div>`;b.onclick=()=>{document.querySelectorAll('.fstep').forEach(x=>x.classList.toggle('on',x===b));};fn.appendChild(b);});
